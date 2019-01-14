@@ -6,24 +6,24 @@ CNTK (Microsoft Cognitive Toolkit), is a deep learning framework developed by Mi
 LSTM, which stand for Long Short-Term Memory, are a particular type of recurrent neural networks that got lot of attention recently within the machine learning community. In a simple way, LSTM networks have some internal contextual state cells that act as long-term or short-term memory cells.
 
 # Problem Statement
-This project is going to help the hospital to determine if a patient has a fatal malignant cancer vs. a benign growth by building a Feed Forward Network model. (have the same dataset as CNTK1-Logistiic Regression )
+This project is going to use ATIS dataset, from which we have task of slot tagging (tag individual words to their respective classes, where the classes are provided as labels in the training data set.)
  
 # Data Summary
-Cancer dataset, icludes the age and the size of the tumor. Intuitively, one can imagine that younger patients and/or patient with small tumor size are less likely to have malignant cancer.
+we are going to use ATIS dataset, which has 7 columns and each row have a sequence id with 11 entries. This means that sequence 19 consists of 11 tokens; column S0, which contains numeric word indices; the input data is encoded in one-hot vectors. There are 943 words in the vocabulary, so each word is a 943-element vector of all 0 with a 1 at a vector index chosen to represent that word.
 
 # Algorithms
-To train a Feed Forward Network, which is an artificial neural network where connections between the units do not form a cycle. In this network, the information moves in only one direction, forward, from the input nodes, through the hidden nodes (if any) and to the output nodes. There are no cycles or loops in the network.
+LSTM, is a particular type of recurrent neural networks that got lot of attention recently within the machine learning community. In a simple way, LSTM networks have some internal contextual state cells that act as long-term or short-term memory cells.
 
 # Approach
 1. Data reading: We generate simulated data sets with each sample having two features (plotted below) indicative of the age and 2 tumor size. 
 
 2. Data preprocessing: Often, the individual features such as size or age need to be scaled. Typically, one would scale the data between 0 and 1. 
 
- 3. Model creation: Feed Forward Network.
+ 3. Model creation: LSTM.
  
-4. Evaluation: error rate.
+4. Evaluation: measure the model accuracy by going through all the examples in the test set and use the test_minibatch method of the trainer created inside the evaluate function defined above. .
 
 # Conclusion
-Feed Forward Network give us error of 0.12 indicating that our model can very effectively deal with previously unseen observations.
+The bidirectional model has 40% less parameters than the lookahead one. However, the lookahead model trained about 30% faster.
 
 
