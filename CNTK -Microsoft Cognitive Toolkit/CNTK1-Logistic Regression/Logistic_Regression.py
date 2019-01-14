@@ -1,22 +1,5 @@
 # Our goal is to learn a classifier that can automatically label any patient into either the benign or malignant categories given two features (age and tumor size). 
-# In this tutorial, we will create a linear classifier, a fundamental building-block in deep networks.
-
-from IPython.display import Image
-# Figure 1
-Image(url="https://www.cntk.ai/jup/cancer_data_plot.jpg", width=400, height=400)
-
-# Figure 2
-Image(url= "https://www.cntk.ai/jup/cancer_classify_plot.jpg", width=400, height=400)
-
-# Figure 3
-# Logistic Regression
-Image(url= "https://www.cntk.ai/jup/logistic_neuron.jpg", width=500, height=400)
-
-# Figure 4
-Image(url= "https://www.cntk.ai/jup/logistic_neuron2.jpg", width=500, height=400)
-
-
-
+# I will create a linear classifier, a fundamental building-block in deep networks.
 
 # Import the relevant components
 from __future__ import print_function
