@@ -15,9 +15,9 @@ we are going to use ATIS dataset, which has 7 columns and each row have a sequen
 LSTM, is a particular type of recurrent neural networks that got lot of attention recently within the machine learning community. In a simple way, LSTM networks have some internal contextual state cells that act as long-term or short-term memory cells.
 
 # Approach
-1. Data reading: We generate simulated data sets with each sample having two features (plotted below) indicative of the age and 2 tumor size. 
+1. Data reading: Downloading the data. 
 
-2. Data preprocessing: Often, the individual features such as size or age need to be scaled. Typically, one would scale the data between 0 and 1. 
+2. Data preprocessing: NA
 
  3. Model creation: LSTM.
  
