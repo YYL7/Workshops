@@ -6,22 +6,22 @@ CNTK (Microsoft Cognitive Toolkit), is a deep learning framework developed by Mi
 LSTM, which stand for Long Short-Term Memory, are a particular type of recurrent neural networks that got lot of attention recently within the machine learning community. In a simple way, LSTM networks have some internal contextual state cells that act as long-term or short-term memory cells.
 
 # Problem Statement
-This project is going to use ATIS dataset, from which we have task of slot tagging (tag individual words to their respective classes, where the classes are provided as labels in the training data set.)
- 
+This project is going to demonstrate how to use CNTK to predict future values in a time series using LSTMs by simulating dataset.
+
 # Data Summary
-we are going to use ATIS dataset, which has 7 columns and each row have a sequence id with 11 entries. This means that sequence 19 consists of 11 tokens; column S0, which contains numeric word indices; the input data is encoded in one-hot vectors. There are 943 words in the vocabulary, so each word is a 943-element vector of all 0 with a 1 at a vector index chosen to represent that word.
+Time series problem will use simulated data set of a continuous function. For details, we generate multiple such instances of the input signal (by sampling from sin function) each of size N and the corresponding desired output as our training data. 
 
 # Algorithms
 LSTM, is a particular type of recurrent neural networks that got lot of attention recently within the machine learning community. In a simple way, LSTM networks have some internal contextual state cells that act as long-term or short-term memory cells.
 
 # Approach
-1. Data reading: We generate simulated data sets with each sample having two features (plotted below) indicative of the age and 2 tumor size. 
+1. Data reading: We generate simulated data sets.
 
-2. Data preprocessing: Often, the individual features such as size or age need to be scaled. Typically, one would scale the data between 0 and 1. 
+2. Data preprocessing:  visualize the generated data
 
  3. Model creation: LSTM.
  
-4. Evaluation: measure the model accuracy by going through all the examples in the test set and use the test_minibatch method of the trainer created inside the evaluate function defined above. .
+4. Evaluation: validate and test error
 
 # Conclusion
 The time series we build is not perfect but close enough.
